@@ -1,0 +1,1822 @@
+[
+    {
+        "id": "28a91ebf08a1e5e4",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "89939cfa2345d62d",
+        "type": "group",
+        "z": "28a91ebf08a1e5e4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7ed5dd6a76847e03",
+            "587f5331e2dbf0f3",
+            "84a18cbde221325f",
+            "aa2221413e581c8e",
+            "03c7d1361560a853",
+            "280dcb1e59a368ea",
+            "92cb1d8246133337",
+            "38214697842e99c0",
+            "b0d37d30d2ea9460"
+        ],
+        "x": 274,
+        "y": 39,
+        "w": 832,
+        "h": 202
+    },
+    {
+        "id": "3bb37e10c56d04fa",
+        "type": "group",
+        "z": "28a91ebf08a1e5e4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8f769723643a462b",
+            "9df7342aaa90a38a",
+            "14210401dbb8743a",
+            "a951731d69e2b79e",
+            "27e4435a2649bfbf",
+            "86477c10c1511a4c",
+            "53f18129075bd4f4",
+            "0f1c2f3144ed598e",
+            "1c6db6a88820dcbd",
+            "d9c528df0f360ea4",
+            "1966e633304a0ebb",
+            "0c6c5f4529577bd4",
+            "aeb7b8191487219c",
+            "01a5e9d4cf5dd388",
+            "c8e2d43408d6ab5f",
+            "60aa30ab8799991d",
+            "dcf8850e07f4e317"
+        ],
+        "x": 274,
+        "y": 299,
+        "w": 1352,
+        "h": 322
+    },
+    {
+        "id": "a0aa6d630f26de92",
+        "type": "group",
+        "z": "28a91ebf08a1e5e4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1954aafd0289e645",
+            "c82b65c09a81d3ba",
+            "5e427d51b8316aa8",
+            "319439e8ea1965ee",
+            "e4f40eae34bccd55",
+            "6b0fc52a73b9377f",
+            "80f1acab2b5f0c0e",
+            "7f9a77886b7dc031",
+            "522f18e2852b3afb",
+            "7755a7b9a97d9eb2",
+            "07b821f9b2d7f536",
+            "4f9898e21ff424ad"
+        ],
+        "x": 274,
+        "y": 879,
+        "w": 1162,
+        "h": 242
+    },
+    {
+        "id": "2d837356c67f201e",
+        "type": "group",
+        "z": "28a91ebf08a1e5e4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bd069f173fddea82",
+            "a1b0e0685bd1bb26",
+            "9a2c9f5d06b85831",
+            "ad91a801075cd95a",
+            "9a123b46a72c1261",
+            "ae4699a3bb66c20e",
+            "611bb37ef79f0978"
+        ],
+        "x": 274,
+        "y": 679,
+        "w": 882,
+        "h": 142
+    },
+    {
+        "id": "51d726cb390d3d5d",
+        "type": "group",
+        "z": "28a91ebf08a1e5e4",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b4570f72224ec9ba",
+            "d97f177817838138",
+            "66e1fc87b4e35c36",
+            "b866b43824d73aab",
+            "7968db0ea4fd0604",
+            "d5fd48dbd6ac5d97",
+            "b548b9d8e27df080",
+            "5e6892c7cac991c7",
+            "8725e5fdbee721bd",
+            "0caeb309b15911d2",
+            "23ca2ff74e7a152a",
+            "e403f84f6f4938fb",
+            "2235f0963c74a999",
+            "3971b6523363d22e",
+            "1aa2feac92d97a0f",
+            "a7b77b3301aba28b",
+            "f2bb1a47f7f3a5c2",
+            "295997a43a75337e",
+            "6763df562408d25d",
+            "ed6b5db7be5a98b9"
+        ],
+        "x": 274,
+        "y": 1199,
+        "w": 1452,
+        "h": 342
+    },
+    {
+        "id": "7ed5dd6a76847e03",
+        "type": "inject",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "587f5331e2dbf0f3"
+            ]
+        ]
+    },
+    {
+        "id": "587f5331e2dbf0f3",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "select *\r\nfrom site_detail",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "84a18cbde221325f",
+                "280dcb1e59a368ea",
+                "92cb1d8246133337"
+            ]
+        ]
+    },
+    {
+        "id": "84a18cbde221325f",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "function 2",
+        "func": "// 1. รับข้อมูล (รองรับทั้ง Array และ Object)\nlet data = Array.isArray(msg.payload) ? msg.payload : [msg.payload];\n\n// 2. แปลงเป็น object map\nlet site_map = data.reduce((acc, row) => {\n    if (row.site_name && row.id !== undefined) {\n        \n        // สร้าง Key ตัวพิมพ์เล็ก\n        let key = row.site_name.toString().trim().toLowerCase();\n        \n        // --- ส่วนที่ปรับแก้: แยก sensor_type ออกมา แล้วเปลี่ยนชื่อเป็น type ---\n        // ใช้ Destructuring: ดึง sensor_type ออกมา, ที่เหลือเก็บไว้ใน others\n        let { sensor_type, ...others } = row;\n        \n        // สร้าง object ใหม่: เอา type ใส่เข้าไป + ข้อมูลอื่นๆ ที่เหลือ (min, max, gateway ฯลฯ)\n        acc[key] = { \n            type: sensor_type, \n            ...others \n        };\n    }\n    return acc;\n}, {});\n\n// 3. เก็บลง Global\nglobal.set(\"site_map\", site_map);\n\nnode.status({ fill: \"green\", shape: \"dot\", text: `cached ${Object.keys(site_map).length} sites` });\n\nmsg.payload = site_map;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 140,
+        "wires": [
+            [
+                "aa2221413e581c8e"
+            ]
+        ]
+    },
+    {
+        "id": "aa2221413e581c8e",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8f769723643a462b",
+        "type": "inject",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "9df7342aaa90a38a"
+            ]
+        ]
+    },
+    {
+        "id": "9df7342aaa90a38a",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "manage data",
+        "func": "// 1. ดึงข้อมูล Config\nlet data = global.get(\"site_map\") || {};\nlet dat = msg.payload;\n\nlet deviceName = dat.deviceName ? dat.deviceName.toString().trim().toLowerCase() : \"\";\nlet sensorInfo = data[deviceName];\n\nif (!sensorInfo) {\n    node.warn(`Device ${deviceName} not found in list`);\n    return null;\n}\n\n// 2. จัดการข้อมูลพื้นฐาน\nlet timestamp = dat.gateway ? new Date(dat.gateway) : new Date();\nmsg.payload.gatewayTime = timestamp.toISOString();\n\nlet battery = null;\nif (dat.battery !== undefined && dat.battery !== null) {\n    battery = parseFloat(dat.battery);\n}\nif (sensorInfo.type !== 'O3') {\n    msg.payload.battery = battery;\n}\n\nmsg.payload.site_id = sensorInfo.id;\nnode.status({ fill: \"green\", shape: \"dot\", text: `${sensorInfo.type}` });\n\n// 3. Logic ตรวจสอบ Alert (แยก Min/Max)\nmsg.payload.alert = false;\nmsg.payload.alertType = \"\";\n\n// --- ฟังก์ชันเช็ค Min/Max ทั่วไป ---\nfunction checkLimits(value, min, max, skip, typeName) {\n    // แก้ไขบรรทัดนี้: ถ้า skip เป็น true (หรือ 1) ให้หยุดทำงาน, ถ้าเป็น false (0) ให้ทำต่อ\n    if (skip) return false; \n    \n    // เช็คว่ามีค่า value ส่งมาหรือไม่\n    if (value === undefined || value === null) return false;\n\n    if (value < min) {\n        msg.payload.alertType = `low_${typeName}`; \n        return true;\n    } else if (value > max) {\n        msg.payload.alertType = `high_${typeName}`; \n        return true;\n    }\n    return false;\n}\n\n// --- MAIN CHECK LOGIC ---\nif (sensorInfo.type === 'EM300' || sensorInfo.type === 'EM320-TH') {\n    msg.deviceType = 'EM320-TH';\n\n    // เช็คอุณหภูมิ (ใช้ min_a, max_a)\n    let isTempAlert = checkLimits(msg.payload.temperature, sensorInfo.min_a, sensorInfo.max_a, sensorInfo.skip, \"temp\");\n\n    // เช็คความชื้น (ใช้ min_b, max_b)\n    let isHumidAlert = checkLimits(msg.payload.humidity, sensorInfo.min_b, sensorInfo.max_b, sensorInfo.skip, \"humid\");\n\n    if (isTempAlert || isHumidAlert) {\n        msg.payload.alert = true;\n        // ถ้า Alert ทั้งคู่ ให้ priority temp ก่อน หรือปรับตามต้องการ\n        if (isTempAlert && isHumidAlert) msg.payload.alertType = \"critical_both\";\n    }\n\n} else if (sensorInfo.type === 'EM500-PT100') {\n    msg.deviceType = sensorInfo.type;\n    // PT100 มีแค่ Temp ใช้ min_a, max_a\n    msg.payload.alert = checkLimits(msg.payload.temperature, sensorInfo.min_a, sensorInfo.max_a, sensorInfo.skip, \"temp\");\n\n} else if (sensorInfo.type === 'WS303') {\n    msg.deviceType = sensorInfo.type;\n    msg.payload.leakage_status = msg.payload.leakage_status === 'leak' ? 1 : 0;\n    if ((msg.payload.leakage_status != 0) && sensorInfo.skip != 0) {\n        msg.payload.alert = true;\n        msg.payload.alertType = \"leak\";\n    }\n} else if (sensorInfo.type === 'O3') {\n    msg.deviceType = sensorInfo.type;\n    // O3 ใช้ค่า min_a, max_a (ตามข้อมูล JSON ตัวอย่าง O3 มี min_a/max_a)\n    // หมายเหตุ: payload ของ O3 อาจจะส่งมาเป็น temperature หรือ oz ต้องเช็คให้ดี \n    // (ในโค้ดเดิมคุณใช้ msg.payload.temperature map ไป oz แต่ใน function map SQL คุณใช้ msg.payload.o3)\n    // สมมติว่า O3 ส่งค่ามาในตัวแปร 'temperature' หรือ 'o3'\n    let o3Value = msg.payload.o3 !== undefined ? msg.payload.o3 : msg.payload.temperature;\n    msg.payload.alert = checkLimits(o3Value, sensorInfo.min_a, sensorInfo.max_a, sensorInfo.skip, \"ozone\");\n}\n\n// 4. ระบบหน่วงเวลาแจ้งเตือน (Interval Check)\nif (msg.payload.alert === true) {\n    let configInterval = (sensorInfo.interval && sensorInfo.interval > 0) ? parseInt(sensorInfo.interval) : 15;\n    let lastAlerts = flow.get(\"lastAlerts\") || {};\n    let lastTime = lastAlerts[deviceName] || 0;\n    let now = Date.now();\n    let intervalMs = configInterval * 60 * 1000;\n\n    if (now - lastTime > intervalMs) {\n        lastAlerts[deviceName] = now;\n        flow.set(\"lastAlerts\", lastAlerts);\n    } else {\n        msg.payload.alert = false;\n        let remainingMin = Math.ceil((intervalMs - (now - lastTime)) / 60000);\n        node.status({ fill: \"yellow\", shape: \"dot\", text: `Skip (${msg.payload.alertType}): Wait ${remainingMin}m` });\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "27e4435a2649bfbf",
+                "1966e633304a0ebb",
+                "dcf8850e07f4e317"
+            ]
+        ]
+    },
+    {
+        "id": "03c7d1361560a853",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "fetch site_id",
+        "info": "",
+        "x": 710,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "14210401dbb8743a",
+        "type": "mqtt in",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "",
+        "topic": "milesight/uplink/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "f4f8377b6e1acb85",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "a951731d69e2b79e",
+                "9df7342aaa90a38a"
+            ]
+        ]
+    },
+    {
+        "id": "a951731d69e2b79e",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "280dcb1e59a368ea",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "27e4435a2649bfbf",
+        "type": "switch",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "Route by Device Type",
+        "property": "deviceType",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "EM320-TH",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "EM500-PT100",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS303",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "O3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 900,
+        "y": 480,
+        "wires": [
+            [
+                "86477c10c1511a4c"
+            ],
+            [
+                "53f18129075bd4f4"
+            ],
+            [
+                "0f1c2f3144ed598e"
+            ],
+            [
+                "1c6db6a88820dcbd"
+            ]
+        ]
+    },
+    {
+        "id": "86477c10c1511a4c",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "Map EM320-TH for SQL",
+        "func": "// สร้าง msg.params สำหรับ MSSQL-PLUS node\nmsg.params = [\n    { name: 'timestamp', type: 'DateTime', value: msg.payload.gatewayTime },\n    { name: 'site_id', type: 'Int', value: msg.payload.site_id },\n    { name: 'temp', type: 'Float', value: msg.payload.temperature },\n    { name: 'humid', type: 'Float', value: msg.payload.humidity },\n    { name: 'battery', type: 'Float', value: msg.payload.battery }\n];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 400,
+        "wires": [
+            [
+                "d9c528df0f360ea4",
+                "0c6c5f4529577bd4"
+            ]
+        ]
+    },
+    {
+        "id": "53f18129075bd4f4",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "Map EM500-PT100 for SQL",
+        "func": "// สร้าง msg.params สำหรับ MSSQL-PLUS node\nmsg.params = [\n    { name: 'timestamp', type: 'DateTime', value: msg.payload.gatewayTime },\n    { name: 'site_id', type: 'Int', value: msg.payload.site_id },\n    { name: 'temp', type: 'Float', value: msg.payload.temperature },\n    { name: 'battery', type: 'Float', value: msg.payload.battery }\n];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 460,
+        "wires": [
+            [
+                "aeb7b8191487219c"
+            ]
+        ]
+    },
+    {
+        "id": "0f1c2f3144ed598e",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "Map WS303 for SQL",
+        "func": "// สร้าง msg.params สำหรับ MSSQL-PLUS node\nmsg.params = [\n    { name: 'timestamp', type: 'DateTime', value: msg.payload.gatewayTime },\n    { name: 'site_id', type: 'Int', value: msg.payload.site_id },\n    { name: 'status', type: 'Int', value: msg.payload.leakage_status },\n    { name: 'battery', type: 'Float', value: msg.payload.battery }\n];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 520,
+        "wires": [
+            [
+                "01a5e9d4cf5dd388"
+            ]
+        ]
+    },
+    {
+        "id": "1c6db6a88820dcbd",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "Map O3 Sensor for SQL",
+        "func": "// สร้าง msg.params สำหรับ MSSQL-PLUS node\nmsg.params = [\n    { name: 'timestamp', type: 'DateTime', value: msg.payload.gatewayTime },\n    { name: 'site_id', type: 'Int', value: msg.payload.site_id },\n    { name: 'oz', type: 'Float', value: msg.payload.o3 }\n];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 580,
+        "wires": [
+            [
+                "c8e2d43408d6ab5f"
+            ]
+        ]
+    },
+    {
+        "id": "d9c528df0f360ea4",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "params",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1966e633304a0ebb",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0c6c5f4529577bd4",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "INSERT INTO em320_th_data([site_id],[timestamp],[temp],[humid],[battery])\r\n     VALUES\r\n           (@site_id,@timestamp,@temp,@humid,@battery)",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1520,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aeb7b8191487219c",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "INSERT INTO em500_pt100_data([site_id],[timestamp],[temp],[battery])\r\n     VALUES\r\n           (@site_id,@timestamp,@temp,@battery)\r\n\r\n\r\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1520,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01a5e9d4cf5dd388",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "INSERT INTO ws303_data([site_id],[timestamp],[water_leak],[battery])\r\n     VALUES\r\n           (@site_id,@timestamp,@status,@battery)\r\n\r\n",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1520,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8e2d43408d6ab5f",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "INSERT INTO [o3_data]([site_id],[timestamp],[oz])\r\n     VALUES\r\n           (@site_id,@timestamp,@oz)",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1520,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60aa30ab8799991d",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "save raw data from sensors",
+        "info": "",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "dcf8850e07f4e317",
+        "type": "link out",
+        "z": "28a91ebf08a1e5e4",
+        "g": "3bb37e10c56d04fa",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "1954aafd0289e645"
+        ],
+        "x": 815,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "bd069f173fddea82",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "name": "function 4",
+        "func": "let dat = msg.payload\n\n// ตัวอย่าง SMTP config\nconst smtpConfig = {\n    host: dat.host,\n    port: dat.port,\n    secure: false,\n    user: dat.user,\n    pass: dat.pass,\n    to: dat.to\n};\n\n// เก็บใน global context\nglobal.set(\"mailConfig\", smtpConfig);\n\nnode.status({fill:\"green\", shape:\"dot\", text:\"SMTP config saved\"});\nmsg.payload = \"save success\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 780,
+        "wires": [
+            [
+                "ae4699a3bb66c20e"
+            ]
+        ]
+    },
+    {
+        "id": "a1b0e0685bd1bb26",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "name": "function 5",
+        "func": "const smtp = global.get(\"mailConfig\");\nmsg.payload = smtp;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 780,
+        "wires": [
+            [
+                "ad91a801075cd95a",
+                "9a2c9f5d06b85831"
+            ]
+        ]
+    },
+    {
+        "id": "9a2c9f5d06b85831",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ad91a801075cd95a",
+        "type": "ui-form",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "name": "",
+        "group": "414d788c4850f426",
+        "label": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Host",
+                "key": "host",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Port",
+                "key": "port",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "key": "user",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Password",
+                "key": "pass",
+                "type": "password",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "To",
+                "key": "to",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "host": "",
+            "port": "",
+            "user": "",
+            "pass": "",
+            "to": ""
+        },
+        "payload": "",
+        "submit": "save",
+        "cancel": "clear",
+        "resetOnSubmit": true,
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [
+            {
+                "dropdown": "",
+                "value": "smtp.gmail.com",
+                "label": "Gmail"
+            },
+            {
+                "dropdown": "",
+                "value": "smtp.office365.com",
+                "label": "Outlook"
+            }
+        ],
+        "x": 690,
+        "y": 780,
+        "wires": [
+            [
+                "bd069f173fddea82"
+            ]
+        ]
+    },
+    {
+        "id": "9a123b46a72c1261",
+        "type": "ui-event",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "ui": "1a62dc7ae70f811e",
+        "name": "",
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "a1b0e0685bd1bb26"
+            ]
+        ]
+    },
+    {
+        "id": "ae4699a3bb66c20e",
+        "type": "ui-notification",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "ui": "1a62dc7ae70f811e",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 1040,
+        "y": 780,
+        "wires": [
+            [
+                "a1b0e0685bd1bb26"
+            ]
+        ]
+    },
+    {
+        "id": "1954aafd0289e645",
+        "type": "link in",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "link in 2",
+        "links": [
+            "dcf8850e07f4e317"
+        ],
+        "x": 405,
+        "y": 920,
+        "wires": [
+            [
+                "c82b65c09a81d3ba",
+                "5e427d51b8316aa8"
+            ]
+        ]
+    },
+    {
+        "id": "c82b65c09a81d3ba",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "5e427d51b8316aa8",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "topic email",
+        "func": "let data = msg.payload;\n\nlet date = data.gatewayTime ? new Date(data.gatewayTime) : new Date();\nmsg.timestamp = date.toLocaleString(\"th-TH\", {\n    timeZone: \"Asia/Bangkok\",\n    year: \"numeric\",\n    month: \"2-digit\",\n    day: \"2-digit\",\n    hour: \"2-digit\",\n    minute: \"2-digit\",\n    second: \"2-digit\",\n    hour12: false\n});\n\n// message alert\nif(msg.deviceType === 'EM320-TH' && msg.payload.alert === true){\n    msg.topics = \"🚨 High Temperature/High Humidity Alert 🚨\"\n    msg.value = `Temperature : ${data.temperature} °C<br>Humidity : ${data.humidity} %RH`;\n    msg.deviceId = data.deviceName;\n}else if(msg.deviceType === 'EM500-PT100' && msg.payload.alert === true){\n    msg.topics = \"🚨 High Temperature Alert 🚨\"\n    msg.value = `Temperature : ${data.temperature} °C`;\n    msg.deviceId = data.deviceName;\n}else if(msg.deviceType === 'WS303' && msg.payload.alert === true){\n    msg.topics = \"🚨 WATER LEAK DETECTED 🚨\"\n    msg.value = \"Status : Water leak detected.\";\n    msg.deviceId = data.deviceName;\n}else if(msg.deviceType === 'O3' && msg.payload.alert === true){\n    msg.topics = \"🚨 High Ozone Alert 🚨\"\n    msg.value = `oz : ${data.temperature} ppm`;  \n    msg.deviceId = data.deviceName;\n}else{\n    return null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1020,
+        "wires": [
+            [
+                "7f9a77886b7dc031",
+                "319439e8ea1965ee"
+            ]
+        ]
+    },
+    {
+        "id": "319439e8ea1965ee",
+        "type": "template",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>รายงานการแจ้งเตือนเซ็นเซอร์</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <style>\n        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');\n        \n        body {\n            font-family: 'Kanit', sans-serif;\n        }\n        \n        .email-container {\n            max-width: 600px;\n            margin: 0 auto;\n            background: white;\n        }\n        \n        .status-badge {\n            display: inline-block;\n            padding: 4px 12px;\n            border-radius: 20px;\n            font-size: 12px;\n            font-weight: 600;\n            text-transform: uppercase;\n        }\n        \n        .status-normal { background: #dcfce7; color: #166534; }\n        .status-warning { background: #fef3c7; color: #92400e; }\n        .status-critical { background: #fecaca; color: #991b1b; }\n        \n        .sensor-card {\n            border: 1px solid #e5e7eb;\n            border-radius: 8px;\n            padding: 16px;\n            margin-bottom: 12px;\n            background: #f9fafb;\n        }\n        \n        .alert-item {\n            border-left: 4px solid #ef4444;\n            padding: 12px 16px;\n            margin-bottom: 8px;\n            background: #fef2f2;\n        }\n        \n\n        \n        @media (max-width: 600px) {\n            .email-container {\n                margin: 0 10px;\n            }\n        }\n    </style>\n</head>\n<body class=\"bg-gray-50\">\n    <!-- Email Template Preview -->\n    <div class=\"email-container\">\n        <!-- Email Header -->\n        <div style=\"background-color: #1e40af; background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%); color: white; padding: 24px; text-align: center;\">\n            <h1 style=\"margin: 0; font-size: 24px; font-weight: bold; font-family: 'Kanit', sans-serif, Arial;\">SENSOR REPORT</h1>\n            <p style=\"margin: 8px 0 0 0; opacity: 0.9; font-family: 'Kanit', sans-serif, Arial;\" id=\"emailDate\">{{timestamp}}</p>\n        </div>\n\n        <!-- Critical Alerts -->\n        <div style=\"padding: 24px; border-bottom: 1px solid #e5e7eb;\" id=\"criticalSection\">\n            <h2 style=\"color: #dc2626; margin: 0 0 16px 0; font-size: 18px;\">{{topics}}</h2>\n            <div id=\"criticalAlerts\">\n                <div class=\"alert-item\">\n                    {{!-- <div style=\"font-weight: 600; color: #991b1b; margin-bottom: 4px;\"></div> --}}\n                    <div style=\"color: #374151; font-size: 14px;\">Site ID : {{deviceId}}</div>\n                    <div style=\"color: #374151; font-size: 14px;\">{{{value}}}</div>\n                    <div style=\"color: #374151; font-size: 14px;\">Time : {{timestamp}}</div>\n                    <div style=\"color: #374151; font-size: 14px;\">Please inspect the location IMMEDIATELY</div>\n                </div>\n            </div>\n        </div>\n\n\n        <!-- Footer -->\n        <div style=\"padding: 24px; background: #f9fafb; text-align: center; color: #6b7280; font-size: 12px;\">\n            <p style=\"margin: 0;\">รายงานนี้ถูกสร้างโดยระบบแจ้งเตือนเซ็นเซอร์อัตโนมัติ</p>\n            <p style=\"margin: 4px 0 0 0;\">หากมีคำถาม กรุณาติดต่อทีมเทคนิค</p>\n        </div>\n    </div>\n  </body>",
+        "x": 710,
+        "y": 1020,
+        "wires": [
+            [
+                "6b0fc52a73b9377f"
+            ]
+        ]
+    },
+    {
+        "id": "e4f40eae34bccd55",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "6b0fc52a73b9377f",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "Transactional Emails",
+        "func": "let data = msg.payload;\nconst smtp = global.get(\"mailConfig\");\nmsg.payload={\n    \"smtp\":smtp.host,\n    \"port\" : smtp.port,\n    \"secure\":smtp.secure,\n    \"email_send\":smtp.user,\n    \"pass\":smtp.pass,\n    \"email_receive\":smtp.to,\n    \"topic\": msg.topics,\n    \"html\":msg.payload   \n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1020,
+        "wires": [
+            [
+                "e4f40eae34bccd55",
+                "07b821f9b2d7f536"
+            ]
+        ]
+    },
+    {
+        "id": "80f1acab2b5f0c0e",
+        "type": "inject",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "deviceType",
+                "v": "EM320-TH",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"devEUI\":\"24e124136d116670\",\"deviceName\":\"TH-Outside\",\"gatewayTime\":\"2025-11-07T06:55:22.235Z\",\"humidity\":50.5,\"temperature\":25.1,\"battery\":null,\"site_id\":18,\"alert\":true}",
+        "payloadType": "json",
+        "x": 370,
+        "y": 1020,
+        "wires": [
+            [
+                "5e427d51b8316aa8"
+            ]
+        ]
+    },
+    {
+        "id": "7f9a77886b7dc031",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "522f18e2852b3afb",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "แก้ data ที่ผูกกับ OZ",
+        "info": "",
+        "x": 550,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7755a7b9a97d9eb2",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "Notification",
+        "info": "",
+        "x": 760,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "07b821f9b2d7f536",
+        "type": "http request",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.3.111:8001/api/v1/sendmail",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "bearer",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 1160,
+        "y": 1020,
+        "wires": [
+            [
+                "4f9898e21ff424ad"
+            ]
+        ]
+    },
+    {
+        "id": "4f9898e21ff424ad",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "a0aa6d630f26de92",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "611bb37ef79f0978",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "2d837356c67f201e",
+        "name": "Dashboard admin",
+        "info": "",
+        "x": 500,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "92cb1d8246133337",
+        "type": "link out",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "b4570f72224ec9ba"
+        ],
+        "x": 875,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b4570f72224ec9ba",
+        "type": "link in",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "test",
+        "links": [
+            "92cb1d8246133337"
+        ],
+        "x": 335,
+        "y": 1240,
+        "wires": [
+            [
+                "d97f177817838138",
+                "0caeb309b15911d2"
+            ]
+        ]
+    },
+    {
+        "id": "d97f177817838138",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "66e1fc87b4e35c36",
+        "type": "comment",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "In-Line table editing",
+        "info": "",
+        "x": 790,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "b866b43824d73aab",
+        "type": "inject",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "Sample data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"name\":\"Living Room\",\"mode\":\"heating\",\"enabled\":true,\"interval\":50},{\"name\":\"Kitchen\",\"mode\":\"cooling\",\"enabled\":true,\"interval\":80},{\"name\":\"Bedroom\",\"mode\":\"heating\",\"enabled\":true,\"interval\":200}]",
+        "payloadType": "json",
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "0caeb309b15911d2"
+            ]
+        ]
+    },
+    {
+        "id": "7968db0ea4fd0604",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "Prep Data",
+        "func": "// Get data from the flow context\nmsg.payload = flow.get(\"inline\") ?? [];\n\n// Add $index and edit field\nfor (let i = 0; i<msg.payload.length; i++) {\n    // add index to the data\n    msg.payload[i].$index = i;\n    msg.payload[i].edit = \"edit\";\n    if(msg.payload[i].sensor_type === \"EM320-TH\" || msg.payload[i].sensor_type === \"EM300\" || msg.payload[i].sensor_type === \"EM500-PT100\"){\n        msg.payload[i].type = \"temp\";\n    }else if(msg.payload[i].sensor_type === \"O3\"){\n        msg.payload[i].type = \"O3\"\n    }else if(msg.payload[i].sensor_type === \"WS303\"){\n        msg.payload[i].type = \"water leak\"\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1320,
+        "wires": [
+            [
+                "d5fd48dbd6ac5d97"
+            ]
+        ]
+    },
+    {
+        "id": "d5fd48dbd6ac5d97",
+        "type": "change",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "Add Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "[{\"title\":\"ID\",\"value\":\"id\",\"sortable\":true},{\"title\":\"Site name\",\"value\":\"site_name\",\"sortable\":true},{\"title\":\"Types\",\"value\":\"type\",\"sortable\":true},{\"title\":\"Min\",\"value\":\"min\",\"sortable\":true},{\"title\":\"Max\",\"value\":\"max\",\"sortable\":true},{\"title\":\"Interval\",\"value\":\"interval\",\"sortable\":true},{\"title\":\"Skip\",\"value\":\"skip\",\"sortable\":true},{\"title\":\"Actions\",\"value\":\"edit\"}]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1320,
+        "wires": [
+            [
+                "b548b9d8e27df080"
+            ]
+        ]
+    },
+    {
+        "id": "b548b9d8e27df080",
+        "type": "ui-template",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "group": "2fa93bc790219419",
+        "page": "",
+        "ui": "",
+        "name": "Data List",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "head": "",
+        "format": "<template>\n  <!-- Provide an input text box to search the content -->\n  <v-text-field v-model=\"search\" label=\"Search\" prepend-inner-icon=\"mdi-magnify\" single-line variant=\"outlined\"\n    hide-details></v-text-field>\n  <v-data-table v-model:search=\"search\" :items=\"msg?.payload\" :headers=\"msg?.headers\">\n\n    <template v-slot:item.type=\"{ item }\">\n      <v-combobox v-model=\"item.type\" :items=\"['temp', 'humid']\" density=\"compact\" variant=\"outlined\" style=\"min-width: 180px;\" :disabled=\"item?.sensor_type !== 'EM320-TH' && item?.sensor_type !== 'EM300'\" hide-details></v-combobox>\n    </template>\n\n    <template v-slot:item.skip=\"{ item }\">\n      <v-checkbox v-model=\"item.skip\" hide-details></v-checkbox>\n    </template>\n\n    <template v-slot:item.interval=\"{ item }\">\n      <v-text-field v-model.number=\"item.interval\" density=\"compact\" variant=\"outlined\" type=\"number\" style=\"min-width: 80px;\" hide-details></v-text-field>\n    </template>\n\n    <template v-slot:item.min=\"{ item }\">\n      <v-text-field v-if=\"item.type === 'humid'\" v-model.number=\"item.min_b\" density=\"compact\" variant=\"outlined\" type=\"number\"\n        style=\"min-width: 80px;\" hide-details>\n      </v-text-field>\n    \n      <v-text-field v-else v-model.number=\"item.min_a\" density=\"compact\" variant=\"outlined\" type=\"number\" style=\"min-width: 80px;\"\n        hide-details>\n      </v-text-field>\n    </template>\n    \n    <template v-slot:item.max=\"{ item }\">\n      <v-text-field v-if=\"item.type === 'humid'\" v-model.number=\"item.max_b\" density=\"compact\" variant=\"outlined\" type=\"number\"\n        style=\"min-width: 80px;\" hide-details>\n      </v-text-field>\n    \n      <v-text-field v-else v-model.number=\"item.max_a\" density=\"compact\" variant=\"outlined\" type=\"number\" style=\"min-width: 80px;\"\n        hide-details>\n      </v-text-field>\n    </template>\n\n    <template v-slot:item.edit=\"{ item }\">\n      <v-btn prepend-icon=\"mdi-content-save\" variant=\"tonal\" color=\"blue\" @click=\"send({topic: 'save', payload: item})\">\n        Save changes\n      </v-btn>\n    </template>\n\n  </v-data-table>\n</template>\n\n<script>\n  export default {\n    data () {\n      return {\n        search: ''\n      }\n    },\n    methods: {\n        // add a function to determine the color of the progress bar given the row's item\n\n\n\n    }\n  }\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1110,
+        "y": 1320,
+        "wires": [
+            [
+                "2235f0963c74a999",
+                "23ca2ff74e7a152a"
+            ]
+        ]
+    },
+    {
+        "id": "5e6892c7cac991c7",
+        "type": "ui-event",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "ui": "1a62dc7ae70f811e",
+        "name": "",
+        "x": 370,
+        "y": 1320,
+        "wires": [
+            [
+                "8725e5fdbee721bd"
+            ]
+        ]
+    },
+    {
+        "id": "8725e5fdbee721bd",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "Detect page load",
+        "func": "let pagetitle = \"Tables\";\n\nif ((msg.topic === \"$pageview\") && (msg.payload.page.name === pagetitle)) {\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1320,
+        "wires": [
+            [
+                "7968db0ea4fd0604"
+            ]
+        ]
+    },
+    {
+        "id": "0caeb309b15911d2",
+        "type": "change",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "inline",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 1280,
+        "wires": [
+            [
+                "7968db0ea4fd0604"
+            ]
+        ]
+    },
+    {
+        "id": "23ca2ff74e7a152a",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "Update Data",
+        "func": "// let inline = flow.get(\"inline\");\n\n// Update request received\nif (msg.topic === \"save\") {\n    // inline[msg.payload.$index] = msg.payload;\n    // // remove the technical fields\n    // delete inline[msg.payload.$index].edit;\n    // delete inline[msg.payload.$index].$index;\n    // flow.set(\"inline\", inline);\n    // return [{topic : \"Save\", payload : \"Information updated\"}];\n    // ส่งข้อความแจ้งเตือนที่หน้าจอ\n    node.send({topic : \"Notification\", payload : \"Save Success\"});\n\n    // ส่งสัญญาณไปกระตุ้นให้โหลด Config ใหม่ (ผ่าน Link Node)\n    return [null, { payload: \"trigger_reload\" }]; \n    // หมายเหตุ: ต้องเพิ่ม Output ให้ Node นี้เป็น 2 ขา\n}\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 1320,
+        "wires": [
+            [
+                "e403f84f6f4938fb",
+                "ed6b5db7be5a98b9"
+            ]
+        ]
+    },
+    {
+        "id": "e403f84f6f4938fb",
+        "type": "ui-notification",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "ui": "1a62dc7ae70f811e",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "",
+        "raw": false,
+        "className": "",
+        "name": "Notification",
+        "x": 1490,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2235f0963c74a999",
+        "type": "switch",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "save",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 1380,
+        "wires": [
+            [
+                "3971b6523363d22e"
+            ]
+        ]
+    },
+    {
+        "id": "3971b6523363d22e",
+        "type": "function",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "update",
+        "func": "// สร้าง msg.params สำหรับ MSSQL-PLUS node\nlet type = msg.payload.type\nif(type === \"humid\"){\n    msg.params = [\n        { name: 'id', type: 'Int', value: msg.payload.id },\n        { name: 'max_b', type: 'Float', value: msg.payload.max_b },\n        { name: 'min_b', type: 'Float', value: msg.payload.min_b },\n        { name: 'skip', type: 'Bit', value: msg.payload.skip },\n        { name: 'interval', type: 'Int', value: msg.payload.interval }\n    ];\n}else{\n    msg.params = [\n        { name: 'id', type: 'Int', value: msg.payload.id },\n        { name: 'max_a', type: 'Float', value: msg.payload.max_a },\n        { name: 'min_a', type: 'Float', value: msg.payload.min_a },\n        { name: 'skip', type: 'Bit', value: msg.payload.skip },\n        { name: 'interval', type: 'Int', value: msg.payload.interval}\n    ];\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 1480,
+        "wires": [
+            [
+                "295997a43a75337e"
+            ]
+        ]
+    },
+    {
+        "id": "1aa2feac92d97a0f",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "Max , Min b",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "UPDATE site_detail\r\n   SET \r\n      [min_b] = @min_b,\r\n      [max_b] = @max_b,\r\n      [interval] = @interval,\r\n      [skip] = @skip\r\n WHERE id = @id",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1410,
+        "y": 1380,
+        "wires": [
+            [
+                "a7b77b3301aba28b"
+            ]
+        ]
+    },
+    {
+        "id": "a7b77b3301aba28b",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "params",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "38214697842e99c0",
+        "type": "ui-event",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "ui": "1a62dc7ae70f811e",
+        "name": "",
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "587f5331e2dbf0f3"
+            ]
+        ]
+    },
+    {
+        "id": "f2bb1a47f7f3a5c2",
+        "type": "debug",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "params",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "295997a43a75337e",
+        "type": "switch",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "",
+        "property": "payload.type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "humid",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "humid",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1250,
+        "y": 1440,
+        "wires": [
+            [
+                "1aa2feac92d97a0f"
+            ],
+            [
+                "6763df562408d25d"
+            ]
+        ]
+    },
+    {
+        "id": "6763df562408d25d",
+        "type": "MSSQL",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "mssqlCN": "098c58aa8e147812",
+        "name": "Max , Min a",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "UPDATE site_detail\r\n   SET \r\n      [min_a] = @min_a,\r\n      [max_a] = @max_a,\r\n      [interval] = @interval,\r\n      [skip] = @skip\r\n WHERE id = @id",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "params",
+        "paramsOptType": "msg",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1410,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0d37d30d2ea9460",
+        "type": "link in",
+        "z": "28a91ebf08a1e5e4",
+        "g": "89939cfa2345d62d",
+        "name": "reload",
+        "links": [
+            "60f57ee2153bed3e",
+            "ea71e0260aec2dfc",
+            "ed6b5db7be5a98b9"
+        ],
+        "x": 405,
+        "y": 100,
+        "wires": [
+            [
+                "587f5331e2dbf0f3"
+            ]
+        ]
+    },
+    {
+        "id": "ed6b5db7be5a98b9",
+        "type": "link out",
+        "z": "28a91ebf08a1e5e4",
+        "g": "51d726cb390d3d5d",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "b0d37d30d2ea9460"
+        ],
+        "x": 1385,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "098c58aa8e147812",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "THAIINDOKORDSA",
+        "server": "database",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "MyIoTDB",
+        "useUTC": false,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "f4f8377b6e1acb85",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "414d788c4850f426",
+        "type": "ui-group",
+        "name": "email config",
+        "page": "406cb19b42a57d35",
+        "width": "20",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1a62dc7ae70f811e",
+        "type": "ui-base",
+        "name": "Admin",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "icon",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "2fa93bc790219419",
+        "type": "ui-group",
+        "name": "In-Line Editing",
+        "page": "c466b7e4bb472f99",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "406cb19b42a57d35",
+        "type": "ui-page",
+        "name": "Alert settings",
+        "ui": "1a62dc7ae70f811e",
+        "path": "/alert",
+        "icon": "email",
+        "layout": "notebook",
+        "theme": "0d92c765bfad87e6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c466b7e4bb472f99",
+        "type": "ui-page",
+        "name": "Device settings",
+        "ui": "1a62dc7ae70f811e",
+        "path": "/device",
+        "icon": "mdi-cog",
+        "layout": "notebook",
+        "theme": "0d92c765bfad87e6",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0d92c765bfad87e6",
+        "type": "ui-theme",
+        "name": "Basic Blue Theme",
+        "colors": {
+            "surface": "#4d58ff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
