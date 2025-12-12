@@ -118,96 +118,6 @@
       "pluginVersion": "12.2.1",
       "targets": [
         {
-          "alias": "",
-          "datasource": {
-            "type": "mssql",
-            "uid": "_OKkD-eHz"
-          },
-          "editorMode": "code",
-          "format": "table",
-          "hide": true,
-          "rawQuery": true,
-          "rawSql": "-- ถ้า device_id เริ่มต้นด้วย EM500\r\nIF ${device_id:singlequote} LIKE 'EM500-PT100-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n    DATEADD(HOUR, -7, [Time]) as [Time],\r\n    Device_ID,\r\n    Temperature,\r\n    Batt\r\n    FROM EM500_PT100_Data\r\n    WHERE [Time] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [Time] <= DATEADD(HOUR, 7, $__timeTo())\r\n      AND Device_ID = ${device_id:singlequote}\r\n    ORDER BY [time] DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย EM320\r\nELSE IF ${device_id:singlequote} LIKE 'EM320-TH-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n    DATEADD(HOUR, -7, [Time]) as [Time],\r\n    Device_ID,\r\n    Temperature,\r\n    Humidity\r\n    Batt\r\n    FROM EM320_TH_Data\r\n    WHERE [Time] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [Time] <= DATEADD(HOUR, 7, $__timeTo())\r\n      AND Device_ID = ${device_id:singlequote}\r\n    ORDER BY Time DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย WS303\r\nELSE IF ${device_id:singlequote} LIKE 'WS303-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n    DATEADD(HOUR, -7, [Time]) as [Time],\r\n    Device_ID,\r\n    Water_Status,\r\n    Batt\r\n    FROM WS303_Data\r\n    WHERE [Time] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [Time] <= DATEADD(HOUR, 7, $__timeTo())\r\n      AND Device_ID = ${device_id:singlequote}\r\n    ORDER BY Time DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย O3\r\nELSE IF ${device_id:singlequote} LIKE 'O3-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n    DATEADD(HOUR, -7, [Time]) as [Time],\r\n    Device_ID,\r\n    O3\r\n    FROM O3_Data\r\n    WHERE [Time] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [Time] <= DATEADD(HOUR, 7, $__timeTo())\r\n      AND Device_ID = ${device_id:singlequote}\r\n    ORDER BY Time DESC;\r\nEND",
-          "refId": "B",
-          "sql": {
-            "columns": [
-              {
-                "parameters": [],
-                "type": "function"
-              }
-            ],
-            "groupBy": [
-              {
-                "property": {
-                  "type": "string"
-                },
-                "type": "groupBy"
-              }
-            ],
-            "limit": 50
-          }
-        },
-        {
-          "alias": "",
-          "datasource": {
-            "type": "mssql",
-            "uid": "_OKkD-eHz"
-          },
-          "editorMode": "code",
-          "format": "table",
-          "hide": true,
-          "rawQuery": true,
-          "rawSql": "SELECT\r\n    [timestamp],\r\n    sd.site_name as site_id,\r\n    temp as Temperature,\r\n    humid as Humidity,\r\n    (\r\n                            SELECT TOP 1 \r\n                                sub.battery \r\n                            FROM \r\n                                em320_th_data sub\r\n                            WHERE \r\n                                sub.site_id = em32.site_id\r\n                                AND sub.battery IS NOT NULL\r\n                            ORDER BY \r\n                                sub.timestamp DESC\r\n                        ) AS battery\r\nFROM em320_th_data em32\r\nLEFT JOIN site_detail sd\r\nON em32.site_id = sd.id\r\nWHERE sd.site_name = ${site_id:singlequote} AND [timestamp] >= $__timeFrom()\r\n  AND [timestamp] <= $__timeTo()\r\nORDER BY [timestamp] DESC;",
-          "refId": "A",
-          "sql": {
-            "columns": [
-              {
-                "parameters": [],
-                "type": "function"
-              }
-            ],
-            "groupBy": [
-              {
-                "property": {
-                  "type": "string"
-                },
-                "type": "groupBy"
-              }
-            ],
-            "limit": 50
-          }
-        },
-        {
-          "dataset": "MyIoTDB",
-          "datasource": {
-            "type": "mssql",
-            "uid": "_OKkD-eHz"
-          },
-          "editorMode": "code",
-          "format": "table",
-          "hide": true,
-          "rawQuery": true,
-          "rawSql": "-- ถ้า device_id เริ่มต้นด้วย EM500\r\nIF ${site_id:singlequote} LIKE 'T-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n        [timestamp],\r\n        sd.site_name as site_id,\r\n        temp as Temperature,\r\n        (\r\n                                SELECT TOP 1 \r\n                                    sub.battery \r\n                                FROM \r\n                                    em500_pt100_data sub\r\n                                WHERE \r\n                                    sub.site_id = em500.site_id\r\n                                    AND sub.battery IS NOT NULL\r\n                                ORDER BY \r\n                                    sub.timestamp DESC\r\n                            ) AS battery\r\n    FROM em500_pt100_data em500\r\n    LEFT JOIN site_detail sd\r\n    ON em500.site_id = sd.id\r\n    WHERE sd.site_name = ${site_id:singlequote} AND [timestamp] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [timestamp] <= DATEADD(HOUR, 7, $__timeTo())\r\n    ORDER BY [timestamp] DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย EM320\r\nELSE IF ${site_id:singlequote} LIKE 'TH-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n        [timestamp],\r\n        sd.site_name as site_id,\r\n        temp as Temperature,\r\n        humid as Humidity,\r\n        (\r\n                                SELECT TOP 1 \r\n                                    sub.battery \r\n                                FROM \r\n                                    em320_th_data sub\r\n                                WHERE \r\n                                    sub.site_id = em32.site_id\r\n                                    AND sub.battery IS NOT NULL\r\n                                ORDER BY \r\n                                    sub.timestamp DESC\r\n                            ) AS battery\r\n    FROM em320_th_data em32\r\n    LEFT JOIN site_detail sd\r\n    ON em32.site_id = sd.id\r\n    WHERE sd.site_name = ${site_id:singlequote} AND [timestamp] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [timestamp] <= DATEADD(HOUR, 7, $__timeTo())\r\n    ORDER BY [timestamp] DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย WS303\r\nELSE IF ${site_id:singlequote} LIKE 'WL-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n        [timestamp],\r\n        sd.site_name as site_id,\r\n        water_leak,\r\n        (\r\n                                SELECT TOP 1 \r\n                                    sub.battery \r\n                                FROM \r\n                                    ws303_data sub\r\n                                WHERE \r\n                                    sub.site_id = ws.site_id\r\n                                    AND sub.battery IS NOT NULL\r\n                                ORDER BY \r\n                                    sub.timestamp DESC\r\n                            ) AS battery\r\n    FROM ws303_data ws\r\n    LEFT JOIN site_detail sd\r\n    ON ws.site_id = sd.id\r\n    WHERE sd.site_name = ${site_id:singlequote} AND [timestamp] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [timestamp] <= DATEADD(HOUR, 7, $__timeTo())\r\n    ORDER BY [timestamp] DESC;\r\nEND\r\n\r\n-- ถ้า device_id เริ่มต้นด้วย O3\r\nELSE IF ${site_id:singlequote} LIKE 'O3-%' -- ลบ ' ' ออกจากรอบตัวแปร\r\nBEGIN\r\n    SELECT\r\n        [timestamp],\r\n        sd.site_name as site_id,\r\n        oz as OZ\r\n    FROM o3_data o3\r\n    LEFT JOIN site_detail sd\r\n    ON o3.site_id = sd.id\r\n    WHERE sd.site_name = ${site_id:singlequote} AND [timestamp] >= DATEADD(HOUR, 7, $__timeFrom())\r\n      AND [timestamp] <= DATEADD(HOUR, 7, $__timeTo())\r\n    ORDER BY [timestamp] DESC;\r\nEND",
-          "refId": "C",
-          "sql": {
-            "columns": [
-              {
-                "parameters": [],
-                "type": "function"
-              }
-            ],
-            "groupBy": [
-              {
-                "property": {
-                  "type": "string"
-                },
-                "type": "groupBy"
-              }
-            ],
-            "limit": 50
-          }
-        },
-        {
           "dataset": "MyIoTDB",
           "datasource": {
             "type": "mssql",
@@ -217,8 +127,8 @@
           "format": "table",
           "hide": false,
           "rawQuery": true,
-          "rawSql": "/* Grafana Variable */\r\nDECLARE @TargetBatch VARCHAR(20) = ${batch_no:singlequote}; \r\n\r\n-- 1. ดึงเวลา Start/Stop\r\nDECLARE @Start DATETIME2, @Stop DATETIME2;\r\nSELECT @Start = StartDateTime, @Stop = StopDateTime \r\nFROM sap \r\nWHERE batch_no = @TargetBatch;\r\n\r\n-- 2. ดึงข้อมูล (ใช้ CONVERT แปลงเป็น Text)\r\nSELECT \r\n    CONVERT(VARCHAR(10), d.[timestamp], 120) AS [Date], -- ผลลัพธ์: 2025-12-12\r\n    CONVERT(VARCHAR(8), d.[timestamp], 108) AS [Time],  -- ผลลัพธ์: 14:30:00\r\n    s.site_name AS [Sensor Name],\r\n    'Ozone' AS [Type],\r\n    d.oz AS [Value]\r\nFROM o3_data d\r\nJOIN site_detail s ON d.site_id = s.id\r\nWHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n  AND s.site_name IN ('o3-windup', 'o3-outside')\r\n\r\nUNION ALL\r\n\r\nSELECT \r\n    CONVERT(VARCHAR(10), d.[timestamp], 120),\r\n    CONVERT(VARCHAR(8), d.[timestamp], 108),\r\n    s.site_name,\r\n    'Temperature',\r\n    d.temp\r\nFROM em500_pt100_data d\r\nJOIN site_detail s ON d.site_id = s.id\r\nWHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n  AND s.site_name IN ('t-sat tank-01', 't-sat tank-02')\r\n\r\nUNION ALL\r\n\r\nSELECT \r\n    CONVERT(VARCHAR(10), d.[timestamp], 120),\r\n    CONVERT(VARCHAR(8), d.[timestamp], 108),\r\n    s.site_name,\r\n    'Temperature',\r\n    d.temp\r\nFROM em320_th_data d\r\nJOIN site_detail s ON d.site_id = s.id\r\nWHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n  AND s.site_name IN ('th-windup', 'th-outside')\r\n\r\nUNION ALL\r\n\r\nSELECT \r\n    CONVERT(VARCHAR(10), d.[timestamp], 120),\r\n    CONVERT(VARCHAR(8), d.[timestamp], 108),\r\n    s.site_name,\r\n    'Humidity',\r\n    d.humid\r\nFROM em320_th_data d\r\nJOIN site_detail s ON d.site_id = s.id\r\nWHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n  AND s.site_name IN ('th-windup', 'th-outside')\r\n\r\n-- เรียงข้อมูล: เอาวันล่าสุดขึ้นก่อน และเวลาล่าสุดขึ้นก่อน\r\nORDER BY [Date] DESC, [Time] DESC;",
-          "refId": "D",
+          "rawSql": "/* Grafana Variable */\r\nDECLARE @TargetBatch VARCHAR(20) = ${batch_no:singlequote}; \r\n\r\nDECLARE @Start DATETIME2, @Stop DATETIME2;\r\nSELECT @Start = StartDateTime, @Stop = StopDateTime \r\nFROM sap \r\nWHERE batch_no = @TargetBatch;\r\n\r\n-- ใช้ CTE รวบรวมข้อมูล โดยเลือกมา \"เฉพาะที่ต้องใช้\" จริงๆ ห้ามมีคอลัมน์อื่นปน\r\nWITH CleanData AS (\r\n    SELECT \r\n        -- Key สำหรับ Group: ตัดวินาทีทิ้ง (YYYY-MM-DD HH:mm)\r\n        CONVERT(VARCHAR(16), d.[timestamp], 120) AS [DateTimeKey],\r\n        \r\n        -- Column Header: ชื่อเซ็นเซอร์ (เติม Suffix แยก Temp/Humid)\r\n        CASE \r\n            WHEN s.site_name IN ('th-windup', 'th-outside') THEN s.site_name + '_Temp'\r\n            ELSE s.site_name \r\n        END AS [SensorColumn],\r\n        \r\n        -- Value: แปลงเป็น Float ให้ type ตรงกัน\r\n        CAST(d.temp AS FLOAT) AS [Value]\r\n    FROM em320_th_data d\r\n    JOIN site_detail s ON d.site_id = s.id\r\n    WHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n      AND s.site_name IN ('th-windup', 'th-outside')\r\n\r\n    UNION ALL\r\n\r\n    SELECT \r\n        CONVERT(VARCHAR(16), d.[timestamp], 120),\r\n        CASE \r\n            WHEN s.site_name IN ('th-windup', 'th-outside') THEN s.site_name + '_Humid'\r\n            ELSE s.site_name \r\n        END,\r\n        CAST(d.humid AS FLOAT)\r\n    FROM em320_th_data d\r\n    JOIN site_detail s ON d.site_id = s.id\r\n    WHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n      AND s.site_name IN ('th-windup', 'th-outside')\r\n\r\n    UNION ALL\r\n\r\n    SELECT \r\n        CONVERT(VARCHAR(16), d.[timestamp], 120),\r\n        s.site_name, -- กลุ่ม Ozone ไม่ต้องแก้ชื่อ\r\n        CAST(d.oz AS FLOAT)\r\n    FROM o3_data d\r\n    JOIN site_detail s ON d.site_id = s.id\r\n    WHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n      AND s.site_name IN ('o3-windup', 'o3-outside')\r\n\r\n    UNION ALL\r\n\r\n    SELECT \r\n        CONVERT(VARCHAR(16), d.[timestamp], 120),\r\n        s.site_name, -- กลุ่ม Tank ไม่ต้องแก้ชื่อ\r\n        CAST(d.temp AS FLOAT)\r\n    FROM em500_pt100_data d\r\n    JOIN site_detail s ON d.site_id = s.id\r\n    WHERE d.[timestamp] BETWEEN @Start AND @Stop\r\n      AND s.site_name IN ('t-sat tank-01', 't-sat tank-02')\r\n)\r\n\r\n-- ส่วน PIVOT\r\nSELECT \r\n    LEFT(DateTimeKey, 10) AS [Date], \r\n    RIGHT(DateTimeKey, 5) AS [Time],\r\n    [o3-windup], \r\n    [o3-outside], \r\n    [t-sat tank-01], \r\n    [t-sat tank-02],\r\n    [th-windup_Temp],\r\n    [th-outside_Temp],\r\n    [th-windup_Humid],\r\n    [th-outside_Humid]\r\nFROM CleanData -- ดึงจาก CTE ที่มีแค่ 3 คอลัมน์ (Time, Name, Value)\r\nPIVOT (\r\n    AVG(Value) -- ใช้ AVG ยุบรวมข้อมูล\r\n    FOR SensorColumn IN (\r\n        [o3-windup], \r\n        [o3-outside], \r\n        [t-sat tank-01], \r\n        [t-sat tank-02],\r\n        [th-windup_Temp],\r\n        [th-outside_Temp],\r\n        [th-windup_Humid],\r\n        [th-outside_Humid]\r\n    )\r\n) AS pvt\r\nORDER BY [Date] DESC, [Time] DESC;",
+          "refId": "E",
           "sql": {
             "columns": [
               {
@@ -281,5 +191,5 @@
   "timezone": "utc",
   "title": "Export batch data",
   "uid": "d_aRiEeNk",
-  "version": 50
+  "version": 54
 }
